@@ -1,4 +1,5 @@
 def getBondDuration(y, face, couponRate, m, ppy=1):
+    import numpy as np
     n = m * ppy
     coupon = face * couponRate / ppy
     t = np.arange(1, n + 1)
